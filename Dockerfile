@@ -43,3 +43,7 @@ RUN set -ex \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug \
     && apk del .xdebug-builddeps
+
+#### pdo-mysql ####
+RUN docker-php-ext-install pdo_mysql
+
