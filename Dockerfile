@@ -22,6 +22,7 @@ RUN apk add --no-cache \
         py-pip \
         zip \
         bash \
+        nodejs \
     && pip install docker-compose \
     && pip install awscli --ignore-installed six
 
