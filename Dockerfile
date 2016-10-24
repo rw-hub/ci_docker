@@ -23,6 +23,7 @@ RUN apk add --no-cache \
         zip \
         bash \
         nodejs \
+    && npm install -g yarn \
     && pip install docker-compose \
     && pip install awscli --ignore-installed six
 
